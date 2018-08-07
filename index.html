@@ -4,34 +4,281 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Adding content with document.createElement</title>
+    <title>Javascript Katas 3</title>
     <style>
         .bar {
-            background: gray;
-            height: 20px;
-            margin: 10px;
-            color: white;
+            color: black;
         }
     </style>
 </head>
 
 <body>
-    <h1>Adding content with document.createElement</h1>
+    <h1>Javascript Katas 3</h1>
     <div id="d1"></div>
+
+    <p id="output"></p>
     <script>
-        for (i = 1; i <= 3; i++) {
-            // Create a div, with class "bar", and set the width to 100px.
-            var newElement = document.createElement("div");
-            newElement.className = "bar";
-            newElement.style.width = i * 100 + "px";
-
-            // Place a text label inside the new div.
-            var newText = document.createTextNode("Bar #" + i);
+        //Kata 1
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+            var newText = document.createTextNode("Display the numbers from 1 to 20.");
             newElement.appendChild(newText);
+            for (let counter = 1; counter <= 20; counter++) {
 
-            // Put the new div on the page inside the existing element "d1".
+                var newNumber1 = document.createTextNode(" " + counter + " ")
+                newElement.appendChild(newNumber1)
+            };
+
             var destination = document.getElementById("d1");
             destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //Kata 2
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the even numbers from 1 to 20.");
+            newElement.appendChild(newText);
+            let counter = 1;
+            while (counter <= 20) {
+                if (counter % 2 == 0) {
+                    var newNumber1 = document.createTextNode(" " + counter + " ")
+                    newElement.appendChild(newNumber1)
+
+                    counter++
+                } else {
+                    counter++
+
+                }
+            };
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //Kata 3
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the odd numbers from 1 to 20.");
+            newElement.appendChild(newText);
+            let counter = 1;
+            while (counter <= 20) {
+                if (counter % 2 == 0) {
+                    var newNumber1 = document.createTextNode(" " + counter - 1 + " ")
+                    newElement.appendChild(newNumber1)
+
+                    counter++
+                } else {
+                    counter++
+
+                }
+            };
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //Kata 4
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the multiples of 5 up to 100. ");
+            newElement.appendChild(newText);
+            let counter = 1;
+            while (counter <= 100) {
+                if (counter % 5 == 1) {
+                    var newNumber1 = document.createTextNode(" " + counter - 1 + " ")
+                    newElement.appendChild(newNumber1)
+
+                    counter++
+                } else {
+                    counter++
+
+                }
+            };
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //Kata 5
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the square numbers up to 100.");
+            newElement.appendChild(newText);
+            let counter = 1;
+            while (counter <= 10) {
+                var newNumber1 = document.createTextNode(" " + counter * counter + " ")
+                newElement.appendChild(newNumber1)
+
+                counter++
+            };
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //Kata 6
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the numbers counting backwards from 20 to 1.");
+            newElement.appendChild(newText);
+            let counter = 20;
+            while (counter >= 1) {
+                var newNumber1 = document.createTextNode(" " + counter + " ")
+                newElement.appendChild(newNumber1)
+
+                counter--
+            };
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //Kata 7 
+
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the even numbers counting backwards from 20.");
+            newElement.appendChild(newText);
+            let counter = 20;
+            while (counter >= 1) {
+                if (counter % 2 == 0) {
+                    var newNumber1 = document.createTextNode(" " + counter + " ")
+                    newElement.appendChild(newNumber1)
+                    counter--
+                } else
+
+                {
+                    counter--
+                }
+            };
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //Kata 8
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the odd numbers counting backwards from 20. ");
+            newElement.appendChild(newText);
+            let counter = 20;
+            while (counter >= 1) {
+                if (counter % 2 == 0) {
+                    var newNumber1 = document.createTextNode(" " + counter - 1 + " ")
+                    newElement.appendChild(newNumber1)
+                    counter--
+                } else
+
+                {
+                    counter--
+                }
+            };
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //Kata 9
+
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the multiples of 5 counting down from 100. ");
+            newElement.appendChild(newText);
+            let counter = 100;
+            while (counter >= 5) {
+                if (counter % 5 == 1) {
+                    var newNumber1 = document.createTextNode(" " + counter - 1 + " ")
+                    newElement.appendChild(newNumber1)
+                    counter--
+                } else
+
+                {
+                    counter--
+                }
+            };
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //Kata 10
+
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the square numbers, counting down from 100. ");
+            newElement.appendChild(newText);
+            let counter = 10;
+            while (counter >= 1) {
+                if (counter) {
+                    var newNumber1 = document.createTextNode(" " + counter * counter + " ")
+                    newElement.appendChild(newNumber1)
+                    counter--
+                } else
+
+                {
+                    counter--
+                }
+            };
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //Kata 11
+        const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the 20 elements of sampleArray. ");
+            newElement.appendChild(newText);
+            var newNumber1 = document.createTextNode(sampleArray.toString())
+            newElement.appendChild(newNumber1)
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
         }
     </script>
 </body>
