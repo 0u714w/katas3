@@ -264,20 +264,331 @@
         }
 
         //Kata 11
-        const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+        const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940,
+            472
+        ];
 
         for (i = 1; i <= 1; i++) {
             var newElement = document.createElement("span");
 
             var newText = document.createTextNode("Display the 20 elements of sampleArray. ");
             newElement.appendChild(newText);
-            var newNumber1 = document.createTextNode(sampleArray.toString())
-            newElement.appendChild(newNumber1)
+            var newNumber2 = document.createTextNode(sampleArray)
+            newElement.appendChild(newNumber2)
 
             var destination = document.getElementById("d1");
             destination.appendChild(newElement);
             var lineBreak = document.createElement("br");
             newElement.appendChild(lineBreak);
+
+        }
+        //katas12
+
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the even elements of sampleArray. ");
+            newElement.appendChild(newText);
+
+            for (let i = 2; i < sampleArray.length; i++) {
+                if ((sampleArray[i] % 2) == 0)
+                    var newNumber1 = document.createTextNode(" " + sampleArray[i] + " ")
+                newElement.appendChild(newNumber1)
+            }
+
+
+
+
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+        //kata13
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the odd elements of sampleArray. ");
+            newElement.appendChild(newText);
+
+            for (let i = 0; i < sampleArray.length; i++) {
+                if ((sampleArray[i] % 2) == 1)
+                    var newNumber1 = document.createTextNode(" " + sampleArray[i] + " ")
+                newElement.appendChild(newNumber1)
+            }
+
+
+
+
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //kata14
+
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+
+            var newText = document.createTextNode("Display the square of each element in sampleArray. ");
+            newElement.appendChild(newText);
+
+            for (let i = 0; i < sampleArray.length; i++) {
+                var square = (sampleArray[i] * sampleArray[i])
+                var newNumber1 = document.createTextNode(" " + square + " ")
+                newElement.appendChild(newNumber1)
+            }
+
+
+
+
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //kata15
+        for (i = 1; i <= 1; i++) {
+
+            const newArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+            var newElement = document.createElement("span");
+            const add = (a, b) => a + b
+            const sum = newArray.reduce(add)
+
+
+            var newText = document.createTextNode("Display the sum of numbers 1 - 20. ");
+            newElement.appendChild(newText);
+
+            for (let i = 0; i < 1; i++) {
+
+
+
+                var newNumber1 = document.createTextNode(" " + sum + " ")
+                newElement.appendChild(newNumber1)
+
+            }
+
+
+
+
+
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+
+
+
+        //kata16
+
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+            const add = (a, b) => a + b
+            const sum = sampleArray.reduce(add)
+
+            var newText = document.createTextNode("Display the sum of numbers in sampleArray. ");
+            newElement.appendChild(newText);
+
+
+
+            for (let i = 0; i < 1; i++) {
+
+
+
+                var newNumber1 = document.createTextNode(" " + sum + " ")
+                newElement.appendChild(newNumber1)
+
+            }
+
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+
+        }
+
+        //kata17
+
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+            var newText = document.createTextNode("Display the smallest element in sampleArray. ");
+            newElement.appendChild(newText);
+
+            let num1 = 20
+            for (i = 0; i < 1; i++) {
+
+
+                var newNumber1 = document.createTextNode(" " + num1 + " ")
+                newElement.appendChild(newNumber1)
+            }
+
+
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+        }
+
+        //kata18
+
+        for (i = 1; i <= 1; i++) {
+            var newElement = document.createElement("span");
+            var newText = document.createTextNode("Display the largest element in sampleArray. ");
+            newElement.appendChild(newText);
+
+            let num2 = 940
+            for (i = 0; i < 1; i++) {
+
+
+                var newNumber1 = document.createTextNode(" " + num2 + " ")
+                newElement.appendChild(newNumber1)
+            }
+
+
+
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+            var lineBreak = document.createElement("br");
+            newElement.appendChild(lineBreak);
+        }
+
+        //katas19
+
+        for (i = 0; i < 1; i++) {
+            var newElement = document.createElement("span")
+            var newText = document.createTextNode("Display 20 solid gray rectangles, each 20px high and 100px wide.")
+            newElement.appendChild(newText);
+            for (i = 0; i < 20; i++) {
+                var box = document.createElement("div");
+                document.createElement("div");
+                box.style.backgroundColor = "gray";
+                box.style.width = "100px";
+                box.style.height = "20px";
+                box.style.marginTop = "2px";
+                newElement.appendChild(box)
+
+                var destination = document.getElementById("d1");
+                destination.appendChild(newElement);
+                var lineBreak = document.createElement("br");
+                newElement.appendChild(lineBreak);
+            }
+
+
+        }
+
+        //katas20
+
+        for (i = 0; i < 1; i++) {
+            var newElement = document.createElement("span")
+            var newText = document.createTextNode("Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px")
+            newElement.appendChild(newText);
+            for (i = 5; i <= 100; i += 5) {
+                var box = document.createElement("div");
+                document.createElement("div");
+                box.style.backgroundColor = "gray";
+                box.style.width = 100 + i + "px";
+                box.style.height = "20px";
+                box.style.marginTop = "2px";
+                newElement.appendChild(box)
+
+                var destination = document.getElementById("d1");
+                destination.appendChild(newElement);
+                var lineBreak = document.createElement("br");
+                newElement.appendChild(lineBreak);
+            }
+
+
+        }
+
+        //katas21
+
+        for (i = 0; i < 1; i++) {
+            var newElement = document.createElement("span")
+            var newText = document.createTextNode("Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray")
+            newElement.appendChild(newText);
+            for (i = 0; i < 20; i++) {
+                var box = document.createElement("div");
+                document.createElement("div");
+                box.style.backgroundColor = "gray";
+                box.style.width = sampleArray[i] + "px";
+                box.style.height = "20px";
+                box.style.marginTop = "2px";
+                newElement.appendChild(box)
+
+                var destination = document.getElementById("d1");
+                destination.appendChild(newElement);
+                var lineBreak = document.createElement("br");
+                newElement.appendChild(lineBreak);
+            }
+
+
+        }
+
+        //katas22
+
+        for (i = 0; i < 1; i++) {
+            var newElement = document.createElement("span")
+            var newText = document.createTextNode("As in #21, but alternate colors so that every other rectangle is red.")
+            newElement.appendChild(newText);
+            for (i = 0; i < 20; i++) {
+                var box = document.createElement("div");
+                document.createElement("div");
+                box.style.backgroundColor = "gray";
+                box.style.width = sampleArray[i] + "px";
+                box.style.height = "20px";
+                box.style.marginTop = "2px";
+                if (i % 2 == 0) {
+                    box.style.background = "red"
+                }
+                newElement.appendChild(box)
+
+                var destination = document.getElementById("d1");
+                destination.appendChild(newElement);
+                var lineBreak = document.createElement("br");
+                newElement.appendChild(lineBreak);
+            }
+
+
+        }
+
+        //katas23
+
+        for (i = 0; i < 1; i++) {
+            var newElement = document.createElement("span")
+            var newText = document.createTextNode("As in #21, but color the rectangles with even widths red")
+            newElement.appendChild(newText);
+            for (i = 0; i < 20; i++) {
+                var box = document.createElement("div");
+                document.createElement("div");
+                box.style.backgroundColor = "gray";
+                box.style.width = sampleArray[i] + "px";
+                box.style.height = "20px";
+                box.style.marginTop = "2px";
+                if (sampleArray[i] % 2 == 0) {
+                    box.style.background = "red"
+                }
+                newElement.appendChild(box)
+
+                var destination = document.getElementById("d1");
+                destination.appendChild(newElement);
+                var lineBreak = document.createElement("br");
+                newElement.appendChild(lineBreak);
+            }
+
 
         }
     </script>
